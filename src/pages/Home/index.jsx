@@ -1,5 +1,15 @@
+import { useState } from "react";
+import Categorias from "../../components/Categorias";
+import Produtos from "../../components/Produtos";
+import styles from "./Home.module.scss";
 const Home = () => {
-  return <div>Home</div>;
+  const [categoriaSelecionada, setCategoriaSelecionada] = useState(3);
+  return (
+    <section className={styles.home}>
+      <Categorias onCategoriaSelecionada={setCategoriaSelecionada} />
+      <Produtos categoriaSelecionada={categoriaSelecionada} />
+    </section>
+  );
 };
 
 export default Home;

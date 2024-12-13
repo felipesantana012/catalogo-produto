@@ -1,0 +1,34 @@
+@import "./variaveis.scss";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fonte-principal;
+  list-style: none;
+  text-decoration: none;
+  font-size: clamp(0.9rem, 1.2vw, 4rem);
+}
+
+body {
+  background-color: $cor-preto;
+  color: $cor-branca;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p,
+a {
+  font-size: 1rem;
+}

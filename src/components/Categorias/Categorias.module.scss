@@ -1,0 +1,41 @@
+@import "../../styles/variaveis.scss";
+
+.categorias {
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1rem;
+    color: $cor-amarela;
+  }
+
+  ul {
+    background-color: $cor-cinza;
+    border: 1px solid $cor-amarela;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem rgba(212, 198, 0, 0.63);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+
+    li {
+      flex: 1;
+      max-width: calc(49% - 1px);
+
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        font-size: 1.1rem;
+        transition: $transicao;
+        &:hover {
+          scale: 1.1;
+          transition: $transicao;
+          color: #fff280;
+        }
+      }
+    }
+  }
+}
