@@ -17,13 +17,15 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 0.3rem;
+    gap: 1rem;
 
     li {
+      white-space: nowrap;
       flex: 1;
       max-width: calc(49% - 1px);
 
       button {
+        padding: 0.2rem;
         background-color: transparent;
         border: none;
         cursor: pointer;
